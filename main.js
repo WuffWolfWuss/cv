@@ -21,3 +21,23 @@ $("li a").click(function(e){
 // hT = wH = screen height
 //hH = container height
 //wS = position of Scoll
+
+$(window).scroll(function(){
+  var current;
+  if($(window).scrollTop() > $(window).height()){
+    $(".navli").each(function(key, value){
+      if($(window).scrollTop() >= value.offsetTop - 50 &&
+                $(window).scrollTop() + 50 < (value.offsetTop + value.offsetHeight)){
+        current = value.id;
+        //console.log(current);
+      }
+    });
+
+    $(".nav-link").each(function(key, value){
+      value.classList.remove("active");
+      if(value.classList.contains(current) && !value.classList.contains("active")){
+        value.classList.toggle("active");
+      }
+    });
+  } //end of main if
+});
