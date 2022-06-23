@@ -5,6 +5,9 @@
   #profile .col {
     text-align: center;
   }
+  #footer .fa-envelope {
+    font-size: 15px;
+  }
   .navbar{
         display:none;
     }
@@ -179,9 +182,15 @@ li .active{
 .gitH-top {
   margin-top: 40px;
 }
+#skill{
+  padding-bottom: 15%;
+}
 #footer {
-  padding: 3% 5%;
+  padding: 10% 10%;
   text-align: center;
+}
+#footer .lead{
+  padding-bottom: 10%
 }
 .social-icon{
   margin: 8px 8px;
@@ -190,4 +199,7 @@ li .active{
 .fixed .navbar {
   position: fixed;
   top: 60px;
+}
+.bottom-param{
+  font-size: 15px;
 }
