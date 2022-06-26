@@ -19,6 +19,9 @@
   .top-container .container .lead{
     visibility: hidden;
   }
+  .container {
+    padding: 10% !important;
+  }
 }
 
 
@@ -168,7 +171,7 @@ li .active{
     padding: 0;
 }
 
-/* OTHER */
+/* SHARE */
 .container {
   width: 75%;
   padding: 40px 180px;
@@ -185,6 +188,56 @@ li .active{
 #skill{
   padding-bottom: 15%;
 }
+
+/* Project */
+
+#project.container {
+    width: 100%;
+    padding: 40px 80px;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.content .text{
+  width:100%;
+  height: 100%;
+  text-align:center;
+  padding-top: 40%;
+  color: #fff;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#project .container{
+  width: 400px; height: 100%; margin: 10px; padding: 0;
+  display: flex;
+  justify-content: center; align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.imgBox{
+  width: 100%;
+  height: 340px;
+}
+.imgBox img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.content a:hover{
+  letter-spacing: 3px;
+}
+.content a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+/* Footer */
+
 #footer {
   padding: 10% 10%;
   text-align: center;
